@@ -32,6 +32,6 @@ npm run dev
 
 ## Автор
 
-- Ім'я: _вкажи своє ім'я_
-- GitHub: _посилання на профіль_
-- Деплой: _посилання на Vercel / Netlify_
+- Ім'я: Скринник Нікіта
+- GitHub: https://github.com/HekiYTO
+- Деплой: https://traveltrucks-git-main-hekiytos-projects.vercel.app
