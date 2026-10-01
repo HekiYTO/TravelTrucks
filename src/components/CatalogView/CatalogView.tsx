@@ -42,8 +42,8 @@ export default function CatalogView() {
         {campers.length > 0 && (
           <>
             <ul className={`${css.list} ${isReloading ? css.dimmed : ''}`}>
-              {campers.map((camper) => (
-                <CamperCard key={camper.id} camper={camper} />
+              {campers.map((camper, index) => (
+                <CamperCard key={camper.id} camper={camper} priority={index === 0} />
               ))}
             </ul>
 

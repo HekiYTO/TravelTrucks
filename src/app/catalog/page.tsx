@@ -10,6 +10,7 @@ export default function CatalogPage() {
   return (
     <main>
       <div className="container">
+        <h1 className="visually-hidden">Campers catalog</h1>
         <CatalogView />
       </div>
     </main>

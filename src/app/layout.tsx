@@ -11,6 +11,7 @@ const manrope = Manrope({ subsets: ['latin', 'cyrillic'], variable: '--font-manr
 export const metadata: Metadata = {
   title: { default: 'TravelTrucks', template: '%s | TravelTrucks' },
   description: 'TravelTrucks: camper rental. Find the camper of your dreams in our catalog.',
+  icons: { icon: 'data:,' },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

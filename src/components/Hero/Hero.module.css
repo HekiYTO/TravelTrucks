@@ -1,4 +1,3 @@
-/* Щоб замінити фон на справжнє фото: поклади його в public/hero.jpg і заміни hero.svg на hero.jpg нижче. */
 .hero {
   min-height: calc(100vh - 73px);
   display: flex;

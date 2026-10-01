@@ -9,14 +9,22 @@ import type { CamperListItem } from '@/lib/api/types';
 import { formatPrice, getImageUrl, humanize } from '@/utils/format';
 import css from './CamperCard.module.css';
 
-export default function CamperCard({ camper }: { camper: CamperListItem }) {
+export default function CamperCard({ camper, priority = false }: { camper: CamperListItem; priority?: boolean }) {
   const image = getImageUrl(camper.coverImage, 'thumb');
 
   return (
     <li className={css.card}>
       <div className={css.imageWrap}>
         {image && (
-          <Image src={image} alt={camper.name} fill sizes="260px" className={css.image} unoptimized />
+          <Image
+            src={image}
+            alt={camper.name}
+            fill
+            sizes="219px"
+            className={css.image}
+            priority={priority}
+            unoptimized
+          />
         )}
       </div>
 

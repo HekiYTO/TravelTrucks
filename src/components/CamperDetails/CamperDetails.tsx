@@ -1,8 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { BsFuelPump } from 'react-icons/bs';
-import { GiGearStick } from 'react-icons/gi';
 import BookingForm from '@/components/BookingForm/BookingForm';
 import { buttonClass } from '@/components/Button/Button';
 import Chip from '@/components/Chip/Chip';
@@ -63,8 +61,8 @@ export default function CamperDetails({ camperId }: { camperId: string }) {
               Vehicle details
             </h2>
             <ul className={css.chips}>
-              <Chip icon={<GiGearStick />}>{humanize(camper.transmission)}</Chip>
-              <Chip icon={<BsFuelPump />}>{humanize(camper.engine)}</Chip>
+              <Chip>{humanize(camper.transmission)}</Chip>
+              <Chip>{humanize(camper.engine)}</Chip>
               {camper.amenities.map((amenity) => (
                 <Chip key={amenity}>{humanize(amenity)}</Chip>
               ))}
