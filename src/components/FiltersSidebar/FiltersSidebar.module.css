@@ -1,0 +1,135 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sidebar);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* Location -> Filters = 40px */
+  margin-bottom: 16px;
+}
+
+.label,
+.legend {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-muted);
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  padding: 0 20px;
+  background: var(--color-white);
+  border-radius: var(--radius-input);
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.inputWrap svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--color-text);
+}
+
+.inputWrap:focus-within {
+  border-color: var(--color-primary);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.input::placeholder {
+  color: var(--color-muted);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.legend {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.radio {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+/* Кастомная радио-кнопка: круг 24px + точка 14px (как в Figma) */
+.radio input {
+  appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  display: grid;
+  place-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 50%;
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.radio input::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-text-secondary);
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+
+.radio input:checked::before {
+  transform: scale(1);
+}
+
+.radio input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* последняя группа -> кнопки = 48px */
+  margin-top: 24px;
+}

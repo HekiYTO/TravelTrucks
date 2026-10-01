@@ -1,0 +1,57 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 200px;
+  pointer-events: none;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 96px;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  text-align: center;
+}
+
+.spinner {
+  width: 72px;
+  height: 72px;
+  border: 5px solid var(--color-badge);
+  border-top-color: var(--color-primary-hover);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--color-text);
+}
+
+.text {
+  max-width: 260px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,99 @@
+:root {
+  /* Colors (Figma / UI KIT) */
+  --color-primary: #829b91;
+  --color-primary-hover: #6d7b75;
+  --color-text: #101828;
+  --color-text-secondary: #475467;
+  --color-muted: #6c717b;
+  --color-bg-card: #f7f7f7;
+  --color-badge: #f2f4f7;
+  --color-border: #dadde1;
+  --color-star: #ffc531;
+  --color-star-empty: #dadde1;
+  --color-error: #e44848;
+  --color-error-label: #ec383b;
+  --color-error-bg: #ffdfdf;
+  --color-white: #ffffff;
+
+  /* Radius */
+  --radius-card: 16px;
+  --radius-sidebar: 20px;
+  --radius-input: 12px;
+  --radius-pill: 200px;
+
+  /* Typography */
+  --font-label: var(--font-manrope), 'Manrope', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: min(1312px, 100% - 64px);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

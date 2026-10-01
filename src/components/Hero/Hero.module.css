@@ -1,0 +1,30 @@
+/* Щоб замінити фон на справжнє фото: поклади його в public/hero.jpg і заміни hero.svg на hero.jpg нижче. */
+.hero {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  color: var(--color-bg-card);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('/hero.jpg') center / cover no-repeat,
+    #2a1d10;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  line-height: 32px;
+  margin: 8px 0 40px;
+}

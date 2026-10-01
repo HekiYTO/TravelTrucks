@@ -1,0 +1,38 @@
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.item svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.star {
+  color: var(--color-star);
+}
+
+.emptyStar {
+  color: var(--color-star-empty);
+}

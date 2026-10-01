@@ -1,0 +1,56 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+/* Figma: padding 16 / 60, высота 56 */
+.md,
+.sm {
+  padding: 16px 60px;
+}
+
+.full {
+  width: 100%;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.outline {
+  padding: 16px 32px;
+  background: var(--color-white);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.outline:hover:not(:disabled) {
+  border-color: var(--color-primary-hover);
+}
+
+.outline svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

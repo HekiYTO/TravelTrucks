@@ -1,0 +1,41 @@
+.layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+  padding: 48px 0 56px;
+}
+
+.results {
+  position: relative;
+  min-height: 480px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: opacity 0.2s;
+}
+
+.dimmed {
+  opacity: 0.45;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 24px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,0 +1,113 @@
+.box {
+  padding: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+}
+
+.title,
+.subtitle,
+.form {
+  max-width: 527px;
+  margin-inline: auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form > button {
+  /* поля -> кнопка = 24px */
+  margin-top: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 60px;
+  padding: 0 18px;
+  background: var(--color-bg-card);
+  border: 1px solid transparent;
+  border-radius: var(--radius-input);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--color-primary);
+}
+
+.inputWrap input {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.inputWrap input::placeholder {
+  color: var(--color-muted);
+}
+
+/* Error state (Figma: Name/Variant3) */
+.invalid,
+.invalid:focus-within {
+  background: var(--color-error-bg);
+  border-color: var(--color-error);
+}
+
+.invalid input::placeholder {
+  color: transparent;
+}
+
+.floatLabel {
+  position: absolute;
+  top: -13px;
+  left: 17px;
+  padding: 0 8px;
+  border-radius: 8px;
+  background: var(--color-error-bg);
+  font-family: var(--font-label);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-error-label);
+}
+
+.errorIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-error-label);
+  flex-shrink: 0;
+}
+
+.error {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-error);
+}

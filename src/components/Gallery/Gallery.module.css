@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  min-width: 0;
+}
+
+.main,
+.thumbs {
+  width: 100%;
+}
+
+.mainFrame {
+  position: relative;
+  aspect-ratio: 638 / 505;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--color-badge);
+}
+
+.thumbFrame {
+  position: relative;
+  aspect-ratio: 136 / 144;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--color-badge);
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.thumbSlide:global(.swiper-slide-thumb-active) .thumbFrame {
+  border-color: var(--color-primary);
+}
+
+.img {
+  object-fit: cover;
+}
